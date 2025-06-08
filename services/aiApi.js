@@ -13,7 +13,7 @@ async function send_code_to_api(userQuery) {
         { role: 'system', content: 'You are a helpful assistant that can answer users\' queries concisely.' },
         { role: 'user', content: userQuery },
       ],
-      model: 'llama3-8b-8192', 
+      model: 'llama-3.3-70b-versatile', 
     };
 
     const chatCompletion = await client.chat.completions.create(params);
